@@ -3,7 +3,7 @@ import NewRecForm from './NewRecForm';
 import RecCards from './RecCards';
 import Search from './Search';
 
-function RecList ({addNewRec, allRecs}){
+function RecList ({addNewRec, allRecs, searchValue, setSearchValue, elevatorFunction}){
 
     const renderRecs = allRecs.map((rec) => {
         return <RecCards key={rec.id} rec={rec} /> 
@@ -18,7 +18,7 @@ function RecList ({addNewRec, allRecs}){
     return(
         <div>
             <h1>rec list</h1>
-            <Search />
+            <Search searchValue={searchValue} setSearchValue={setSearchValue} elevatorFunction={elevatorFunction}/>
             <br></br>
             <button onClick={handleShowForm}>Add New Rec</button>
             {showForm ? <NewRecForm addNewRec={addNewRec} />  : null} 

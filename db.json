@@ -2,29 +2,63 @@
   "recommendations": [
     {
       "id": 1,
-      "name": "test",
+      "name": "Brooklyn Steel",
       "borough": "Brooklyn",
-      "area": "fort greene",
+      "area": "East Williamsburg",
       "category": "🎶",
-      "url": "http://www.google.com",
-      "img": "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--tablet-1_5x/public/2019/10/faceoff_cage.jpg",
-      "description": "This is a super cool venue!",
-      "events": "https://www.google.com/search?q=event+list&oq=event+list&aqs=chrome..69i57j69i59j35i39j69i59j0i131i433i512j69i60l3.1575j0j4&sourceid=chrome&ie=UTF-8&ibp=htl;events&rciv=evn&sa=X&ved=2ahUKEwiZpc2pxrD7AhWUF1kFHXYMBjsQ66QDKAF6BAgOEAc#htichips=date:today&htischips=date;today&sxsrf=ALiCzsbbJv9xQv9pkIFE9ENGxu6cLMO3cw:1668527772891&htidocid=&htivrt=events&fpstate=tldetail",
-      "user": "lindsay",
-      "likes": 2
+      "url": "https://www.bowerypresents.com/venues/brooklyn-steel",
+      "img": "https://i0.wp.com/livemusicblog.com/wp-content/uploads/2018/06/DSC2272.jpg?resize=1068%2C674&ssl=1",
+      "description": "This is a super cool, standing-room-only venue with great sound!",
+      "user": "Leah",
+      "likes": 0
     },
     {
-      "name": "testtttt",
-      "borough": "Manhattan",
-      "area": "place",
-      "category": "🎶",
-      "url": "",
-      "img": "",
-      "description": "",
-      "events": "",
+      "name": "Caffè Vita",
+      "borough": "Brooklyn",
+      "area": "Bushwick",
+      "category": "☕️",
+      "url": "https://www.caffevita.com/pages/locations#new_york",
+      "img": "https://foodcurated.com/wp-content/uploads/2018/01/vita-6.jpg",
+      "description": "Hands down best coffee in Bushwick. Try the lavender latte or campfire latte!",
       "likes": 0,
-      "user": "",
+      "user": "Leah",
       "id": 2
+    },
+    {
+      "name": "Evil Katsu",
+      "borough": "Manhattan",
+      "area": "East Village",
+      "category": "🌭",
+      "url": "https://www.evilkatsu.com/",
+      "img": "https://infatuation.imgix.net/media/images/reviews/evil-katsu/Screen_Shot_2021-03-18_at_2.23.56_PM.jpeg",
+      "description": "OMG incredibly delicious katsu sandwich! Chicken Katsu is my fave but they're all good! The bread is like a pillow.",
+      "likes": 0,
+      "user": "Leah",
+      "id": 3
+    },
+    {
+      "name": "Clockwork Bar",
+      "borough": "Manhattan",
+      "area": "Lower East Side",
+      "category": "🍸",
+      "url": "https://www.clockworknyc.com/",
+      "img": "https://s3.amazonaws.com/nooklyn-pro/locationphotos/4118/standard/Clockwork_Bar-6.jpg?1529337974",
+      "description": "Divey yet iconic punk bar! Great place to meet up with friends. You will not get in trouble for adding graffiti.",
+      "likes": 0,
+      "user": "Leah",
+      "id": 4
+    },
+    {
+      "name": "Poster House",
+      "borough": "Manhattan",
+      "area": "Chelsea",
+      "category": "🎨",
+      "url": "https://posterhouse.org/",
+      "img": "https://static01.nyt.com/images/2019/06/28/arts/28POSTERS01/28POSTERS01-superJumbo-v2.jpg",
+      "description": "Cheap museum (+ free admission on Fridays!) with rotating exhibits of stunning vintage and modern posters from around the world",
+      "likes": 0,
+      "user": "Leah",
+      "id": 5
     }
   ]
 }

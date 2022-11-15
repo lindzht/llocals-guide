@@ -9,6 +9,7 @@ import RecList from './RecList';
 function App() {
 
   const [allRecs, setAllRecs] = useState([])
+  const [searchValue, setSearchValue] = useState("");
 
   function addNewRec (someNewRecObj) {
     fetch (`http://localhost:3000/recommendations`, {
@@ -27,19 +28,31 @@ function App() {
      .then (response => response.json ())
      .then (recData => setAllRecs(recData))
   }, [])
+
+  const searchedArray = allRecs.filter((rec) => {
+    return rec.name.toLowerCase().includes(searchValue.toLowerCase()) || rec.description.toLowerCase().includes(searchValue.toLowerCase()) || rec.borough.toLowerCase().includes(searchValue.toLowerCase()) || rec.category.toLowerCase().includes(searchValue.toLowerCase()) || rec.area.toLowerCase().includes(searchValue.toLowerCase()); 
+  })
+
+  // function elevatorFunction (filterValue){
+  //   const filteredArray = searchedArray.filter((rec) => {
+  //     console.log(rec);
+  //   })
+  // }
+
+
   
   return (
     <div> 
       <NavBar />
       <Switch>
         <Route path="/recommendations">
-          <RecList allRecs={allRecs} addNewRec={addNewRec}/>
+          <RecList allRecs={searchedArray} addNewRec={addNewRec} searchValue={searchValue} setSearchValue={setSearchValue} />
         </Route>
         <Route path="/about">
           <About />
         </Route>
         <Route exact path="/">
-          <Home />   
+          <Home allRecs={allRecs} />   
         </Route>
       </Switch>
     </div>
