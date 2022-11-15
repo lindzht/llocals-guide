@@ -1,10 +1,6 @@
 import React, {useState} from 'react';
 
 function RecCards ({rec}) {
-
-    // TESTTTTT 
-   // TESTTTTT 
-
    
     const [isFrontCard, setIsFrontCard] = useState(true)
     const [likes, setLikes] = useState(rec.likes)

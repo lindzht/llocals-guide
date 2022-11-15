@@ -10,7 +10,6 @@ function NewRecForm ({addNewRec}) {
         url: "",
         img: "",
         description: "",
-        events: "",
         likes: 0,
         user: ""
     })
@@ -33,7 +32,6 @@ function NewRecForm ({addNewRec}) {
             url: "",
             img: "",
             description: "",
-            events: "",
             user: ""
         });
     }
@@ -53,7 +51,7 @@ function NewRecForm ({addNewRec}) {
     return(
         <div className="new-rec-form">
            <form onSubmit={handleFormSubmit}>
-                <label> Location or Biz Name:
+                <label> Biz Name:
                     <input 
                         type="text" 
                         name="name"
@@ -115,14 +113,6 @@ function NewRecForm ({addNewRec}) {
                         type="text" 
                         name="description"
                         value={newRecObj.description}
-                        onChange={handleChange} />
-                </label>
-                <br />
-                <label> Upcoming events link: 
-                    <input 
-                        type="text" 
-                        name="events"
-                        value={newRecObj.events}
                         onChange={handleChange} />
                 </label>
                 <br />
