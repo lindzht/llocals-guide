@@ -37,7 +37,8 @@ nav {
 }
 
 .card img {
-  width: 100%;
+  max-width: 100%;
+  /* border-radius: 50%; */
 }
 
 .card-list {
@@ -50,3 +51,36 @@ nav {
 .card button {
   color: red;
 }
+
+/* SEARCH PAGE */
+
+#search-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+#category-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+  font-size: 2em;
+  padding: 2%;
+}
+
+#search-input {
+  width: 500px;
+}
+
+#search-input::placeholder {
+  color: rgb(159, 159, 159);
+}
+
+#search-input:focus {
+  background-color: aliceblue;
+  color: red;
+}
+

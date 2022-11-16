@@ -9,12 +9,14 @@ function Search ({searchValue, setSearchValue, elevatorFunction}) {
 
 
     return (
-        <div>
-            <div>
+        <div id='search-page'>
+            <div id='search-container'>
                 <label>
                     <input 
+                        id='search-input'
                         type="text" 
                         name="name"
+                        placeholder='Whatchya looking for?'
                         value={searchValue}
                         onChange={ (e) => {setSearchValue(e.target.value)}} />
                 </label>
@@ -22,7 +24,7 @@ function Search ({searchValue, setSearchValue, elevatorFunction}) {
                         type="submit" 
                         value="Search" />
             </div>
-            <div>
+            <div id='category-filter'>
                 <option onClick={ handleFilter } value="🎶">🎶</option>
                 <option onClick={ handleFilter } value="🎨">🎨</option>
                 <option onClick={ handleFilter } value="☕️">☕️</option>
