@@ -124,7 +124,7 @@ function NewRecForm ({addNewRec}) {
                         onChange={handleChange} />
                 </label>
                 <br />
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit Rec" />
             </form>
         </div>
     )

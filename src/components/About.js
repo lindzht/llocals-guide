@@ -2,7 +2,10 @@ import React from "react";
 
 function About (){
     return(
-        <h1>About</h1> 
+        <div>
+            <h1>About</h1>
+            <p>NYC's hottest new locals only guide 😈 </p> 
+        </div>
     )
 }
 

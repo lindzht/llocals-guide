@@ -39,7 +39,7 @@ function RecCards ({rec}) {
                     <h3 onClick={handleOnClick} >{rec.name}</h3>
                     <h4>{rec.area}, {rec.borough}</h4>         
                     <p>{rec.description}</p>
-                    <a href={rec.url}>Website</a> | <a href={rec.events}>Events</a>
+                    <a href={rec.url}>Website</a>
                     <p>Submitted By: {rec.user}</p>
                 </div>
             }

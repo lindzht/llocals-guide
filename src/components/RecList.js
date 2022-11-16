@@ -26,7 +26,7 @@ function RecList ({addNewRec, allRecs, searchValue, setSearchValue, elevatorFunc
             <CategoryFilter allRecs={allRecs} selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory} allRecCategories={allRecCategories}/>
             <br></br>
-            <button onClick={handleShowForm}>Add New Rec</button>
+            <button onClick={handleShowForm}>{showForm ? 'Hide Form' : 'Add New Rec'}</button>
             {showForm ? <NewRecForm addNewRec={addNewRec} />  : null} 
             <div className='card-list'>
                 {renderRecs}
