@@ -10,7 +10,7 @@
       "img": "https://i0.wp.com/livemusicblog.com/wp-content/uploads/2018/06/DSC2272.jpg?resize=1068%2C674&ssl=1",
       "description": "This is a super cool, standing-room-only venue with great sound!",
       "user": "Leah",
-      "likes": 0
+      "likes": 1
     },
     {
       "name": "Caffè Vita",
@@ -20,7 +20,7 @@
       "url": "https://www.caffevita.com/pages/locations#new_york",
       "img": "https://foodcurated.com/wp-content/uploads/2018/01/vita-6.jpg",
       "description": "Hands down best coffee in Bushwick. Try the lavender latte or campfire latte!",
-      "likes": 0,
+      "likes": 1,
       "user": "Leah",
       "id": 2
     },
@@ -32,7 +32,7 @@
       "url": "https://www.evilkatsu.com/",
       "img": "https://infatuation.imgix.net/media/images/reviews/evil-katsu/Screen_Shot_2021-03-18_at_2.23.56_PM.jpeg",
       "description": "OMG incredibly delicious katsu sandwich! Chicken Katsu is my fave but they're all good! The bread is like a pillow.",
-      "likes": 0,
+      "likes": 2,
       "user": "Leah",
       "id": 3
     },
@@ -44,7 +44,7 @@
       "url": "https://www.clockworknyc.com/",
       "img": "https://s3.amazonaws.com/nooklyn-pro/locationphotos/4118/standard/Clockwork_Bar-6.jpg?1529337974",
       "description": "Divey yet iconic punk bar! Great place to meet up with friends. You will not get in trouble for adding graffiti.",
-      "likes": 0,
+      "likes": 1,
       "user": "Leah",
       "id": 4
     },
@@ -56,9 +56,21 @@
       "url": "https://posterhouse.org/",
       "img": "https://static01.nyt.com/images/2019/06/28/arts/28POSTERS01/28POSTERS01-superJumbo-v2.jpg",
       "description": "Cheap museum (+ free admission on Fridays!) with rotating exhibits of stunning vintage and modern posters from around the world",
-      "likes": 0,
+      "likes": 1,
       "user": "Leah",
       "id": 5
+    },
+    {
+      "name": "Madison Square Garden",
+      "borough": "Manhattan",
+      "area": "Herald Square",
+      "category": "🎶",
+      "url": "https://www.msg.com/madison-square-garden",
+      "img": "https://smedia.pnet-static.com/img/MSG1731.jpg_large",
+      "description": "MSG is the 'World's Most Famous Arena' and for good reason. Besides being the home of the NY Knicks & Rangers, it is the premier venue to see world-class musicians perform. In fact, Phish has played here 81 times since 1994!",
+      "likes": 1,
+      "user": "Leah",
+      "id": 6
     }
   ]
 }

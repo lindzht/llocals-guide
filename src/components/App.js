@@ -10,6 +10,7 @@ function App() {
 
   const [allRecs, setAllRecs] = useState([])
   const [searchValue, setSearchValue] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState('All')
 
   function addNewRec (someNewRecObj) {
     fetch (`http://localhost:3000/recommendations`, {
@@ -29,30 +30,56 @@ function App() {
      .then (recData => setAllRecs(recData))
   }, [])
 
-  const searchedArray = allRecs.filter((rec) => {
-    return rec.name.toLowerCase().includes(searchValue.toLowerCase()) || rec.description.toLowerCase().includes(searchValue.toLowerCase()) || rec.borough.toLowerCase().includes(searchValue.toLowerCase()) || rec.category.toLowerCase().includes(searchValue.toLowerCase()) || rec.area.toLowerCase().includes(searchValue.toLowerCase()); 
+  const searchedArray = allRecs
+  .filter((rec) => {
+    return (
+    rec.name.toLowerCase().includes(searchValue.toLowerCase()) || 
+    rec.description.toLowerCase().includes(searchValue.toLowerCase()) || 
+    rec.borough.toLowerCase().includes(searchValue.toLowerCase()) || 
+    rec.category.toLowerCase().includes(searchValue.toLowerCase()) || 
+    rec.area.toLowerCase().includes(searchValue.toLowerCase())
+    )
   })
+  .filter((rec) => {
+      if (selectedCategory === 'All' || selectedCategory === rec.category)
+      return true
+    })
+
+  // const filteredRecsArray = allRecs.filter((rec) => {
+  //   if (selectedCategory === 'All' || selectedCategory === rec.category)
+  //   return true
+  // })
+
 
   // function elevatorFunction (filterValue){
-  //   const filteredArray = searchedArray.filter((rec) => {
-  //     console.log(rec);
-  //   })
+  //   // const filteredArray = searchedArray.filter((rec) => {
+  //   //   console.log(filterValue)
+  //   // })
   // }
 
 
-  
   return (
     <div> 
       <NavBar />
       <Switch>
         <Route path="/recommendations">
-          <RecList allRecs={searchedArray} addNewRec={addNewRec} searchValue={searchValue} setSearchValue={setSearchValue} />
+          <RecList 
+            allRecs={searchedArray} 
+            allRecCategories={allRecs}
+            addNewRec={addNewRec} 
+            searchValue={searchValue} 
+            setSearchValue={setSearchValue} 
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+
+            // elevatorFunction={elevatorFunction}
+          />
         </Route>
         <Route path="/about">
           <About />
         </Route>
         <Route exact path="/">
-          <Home allRecs={allRecs} />   
+          <Home allRecs={searchedArray} />   
         </Route>
       </Switch>
     </div>

@@ -24,6 +24,11 @@ nav {
   align-items: center;
 }
 
+
+/* HOME  */
+
+
+
 /* CARD DISPLAYS:  */
 
 .card {
@@ -84,3 +89,45 @@ nav {
   color: red;
 }
 
+
+/* CATEGORIES  */
+
+.category-container {
+  margin-top: 5px;
+}
+
+.category-container h5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: red;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.categories button {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  border-radius: 50%;
+  font-size: 2em;
+  margin: 0.5em;
+
+}
+
+.categories button:hover {
+  border: 2px solid red;
+}
+
+.categories button:active {
+  background-color: red;
+}
+
+/* .categories #all {
+  border-radius: 0%;
+  background-color: red;
+  color: white;
+} */
