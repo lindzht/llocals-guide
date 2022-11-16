@@ -18,8 +18,8 @@ function Home ({allRecs}){
             <h1 id="title">LLocal's Guide ✌️ NYC</h1>
             {/* {randomCard} */}
             <div className="random-container">
-                <h3>{randomCard.name}</h3>
-                <img src={randomCard.img} alt={randomCard.name} />
+                {/* <h3>{randomCard.name}</h3>
+                <img src={randomCard.img} alt={randomCard.name} /> */}
             </div>
 
         </div>
@@ -27,3 +27,4 @@ function Home ({allRecs}){
 }
 
 export default Home ;
+
