@@ -71,6 +71,30 @@
       "likes": 1,
       "user": "Leah",
       "id": 6
+    },
+    {
+      "name": "test",
+      "borough": "Brooklyn",
+      "area": "asdf",
+      "category": "🍸",
+      "url": "we",
+      "img": "fw4",
+      "description": "sdf ",
+      "likes": 1,
+      "user": "wer",
+      "id": 7
+    },
+    {
+      "name": "nic cage",
+      "borough": "Brooklyn",
+      "area": "nic cage",
+      "category": "🎶",
+      "url": "nic cage",
+      "img": "nic cage",
+      "description": "nic cage",
+      "likes": 0,
+      "user": "nic cage",
+      "id": 8
     }
   ]
 }

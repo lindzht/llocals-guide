@@ -15,7 +15,7 @@ function Home ({allRecs}){
 
     return(
         <div className="home-container">
-            <h1 id="title">LLocal's Guide ✌️ NYC</h1>
+            {/* <h1 id="title">LLocal's Guide ✌️ NYC</h1> */}
             {/* {randomCard} */}
             <div className="random-container">
                 {/* <h3>{randomCard.name}</h3>
