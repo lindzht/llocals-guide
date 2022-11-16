@@ -1,16 +1,19 @@
 import React, {useState, useEffect} from 'react';
-import { Switch, Route } from 'react-router-dom';
-// import '../App.css';
+import { Switch, Route, useHistory } from 'react-router-dom';
+
 import NavBar from './NavBar';
 import Home from './Home';
 import About from './About';
 import RecList from './RecList';
+import NewRecForm from './NewRecForm';
 
 function App() {
 
   const [allRecs, setAllRecs] = useState([])
   const [searchValue, setSearchValue] = useState("");
   const [selectedCategory, setSelectedCategory] = useState('All')
+
+  const history = useHistory();
 
   function addNewRec (someNewRecObj) {
     fetch (`http://localhost:3000/recommendations`, {
@@ -21,7 +24,10 @@ function App() {
       body: JSON.stringify(someNewRecObj)
     })
     .then (response => response.json())
-    .then (newRecData => setAllRecs([...allRecs, newRecData]))
+    .then (newRecData => {
+      setAllRecs([...allRecs, newRecData]);
+      history.push("/recommendations");
+    })
   }
 
   useEffect (() => {
@@ -77,6 +83,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/new">
+          <NewRecForm addNewRec={addNewRec} /> 
         </Route>
         <Route exact path="/">
           <Home allRecs={searchedArray} />   

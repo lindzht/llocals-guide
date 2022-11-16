@@ -27,7 +27,7 @@ function CategoryFilter ({allRecCategories, allRecs, selectedCategory, setSelect
     
     return(
         <div className="category-container">
-                <h5>Filter By Category:</h5> 
+                <h4>Filter By Category:</h4> 
             <div className="categories">
                 <button id="all" onClick={handleShowAllClick}>All</button>
                 <button onClick={handleMusicClick}>🎶</button>

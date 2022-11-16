@@ -15,7 +15,8 @@ function Search ({searchValue, setSearchValue}) {
                         value={searchValue}
                         onChange={ (e) => {setSearchValue(e.target.value)}} />
                 </label>
-                    <input 
+                    <input
+                        id='submit-input'
                         type="submit" 
                         value="Search" />
             </div>

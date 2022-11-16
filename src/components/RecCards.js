@@ -32,8 +32,8 @@ function RecCards ({rec}) {
                     <h2 onClick={handleOnClick} >{rec.name}</h2>
                     <img src={rec.img} alt={rec.name}></img>
                     <h4>{rec.area}, {rec.borough}</h4>
-                    <p>{rec.category}</p>
-                    <button onClick={handleLikes}> {likes} 💖</button> 
+                    <p id='emoji'>{rec.category}</p>
+                    <button onClick={handleLikes}> {likes} ❤️</button> 
                 </div>
                 : <div id='back-card'> 
                     <h3 onClick={handleOnClick} >{rec.name}</h3>
