@@ -17,7 +17,6 @@ function RecList ({addNewRec, allRecs, searchValue, setSearchValue, elevatorFunc
 
     return(
         <div>
-            <h1>rec list</h1>
             <Search searchValue={searchValue} setSearchValue={setSearchValue} elevatorFunction={elevatorFunction}/>
             <br></br>
             <button onClick={handleShowForm}>Add New Rec</button>

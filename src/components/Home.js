@@ -19,7 +19,7 @@ function Home ({allRecs}){
 
     return(
         <div>
-            <h1>Home!</h1>
+            <h1 id="title">LLocal's Guide ✌️ NYC</h1>
             {randomRec}
         </div>
     )
