@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function NewRecForm ({addNewRec}) {
+function NewRecForm ({addNewRec, setSelectedCategory}) {
 
     const [newRecObj, setNewRecObj] = useState({
         name: "",
@@ -34,6 +34,8 @@ function NewRecForm ({addNewRec}) {
             description: "",
             user: ""
         });
+        
+        setSelectedCategory("All");
     }
 
     function handleChange (e){

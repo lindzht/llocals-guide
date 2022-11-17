@@ -24,6 +24,7 @@ nav {
   align-items: center;
   font-size: 1.9em;
   margin-top: 0.5em;
+  
 }
 
 .nav-links {
@@ -31,6 +32,7 @@ nav {
   justify-content: space-around;
   width: 100%;
   margin-left: 20%;
+  font-style: italic;
 }
 
 nav a {
@@ -236,15 +238,40 @@ nav a:hover {
 
 .categories button:hover {
   border: 2px solid rgb(211, 8, 8);
-}
+} */
 
-.categories button:active {
+ .categories button:active {
   background-color: rgb(211, 8, 8);
 }
 
 .categories button:focus {
   background-color: rgb(211, 8, 8);
 }
+
+.categories a {
+  text-decoration: none;
+}
+
+
+
+/* .categories a:hover {
+  border: 2px solid rgb(211, 8, 8);
+  border-radius: 50%;
+  border: 2px solid rgb(211, 8, 8);
+}
+
+.categories a:active {
+  background-color: rgb(211, 8, 8);
+  border-radius: 50%;
+}
+
+.categories a:focus {
+  background-color: rgb(211, 8, 8);
+  border-radius: 50%;
+} */
+
+
+
 
 
 /* FORM  */

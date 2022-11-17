@@ -27,7 +27,7 @@ function App() {
     .then (response => response.json())
     .then (newRecData => {
       setAllRecs([...allRecs, newRecData]);
-      history.push("/recommendations");
+      history.push("/recommendations/all");
     })
   }
 
@@ -97,7 +97,7 @@ function App() {
           <About />
         </Route>
         <Route path="/new">
-          <NewRecForm addNewRec={addNewRec} /> 
+          <NewRecForm addNewRec={addNewRec} setSelectedCategory={setSelectedCategory}/> 
         </Route>
         <Route exact path="/">
           <Home allRecs={allRecs} />   
