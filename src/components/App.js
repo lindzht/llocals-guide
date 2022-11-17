@@ -78,13 +78,13 @@ function App () {
           />
         </Route>
         <Route path="/about">
-          <About />
+          <About setSelectedCategory={setSelectedCategory} />
         </Route>
         <Route path="/new">
-          <NewRecForm addNewRec={addNewRec} setSelectedCategory={setSelectedCategory}/> 
+          <NewRecForm addNewRec={addNewRec} setSelectedCategory={setSelectedCategory} /> 
         </Route>
         <Route exact path="/">
-          <Home allRecs={allRecs} />   
+          <Home allRecs={allRecs} setSelectedCategory={setSelectedCategory} />   
         </Route>
       </Switch>
     </div>

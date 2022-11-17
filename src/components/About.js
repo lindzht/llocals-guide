@@ -3,8 +3,10 @@ import React from "react";
 import leah from "../images/leah.png";
 import lindsay from "../images/lindsay.png";
 
-function About () {
-    
+function About ({setSelectedCategory}) {
+
+    setSelectedCategory("All");
+
     return (
         <div className="about-container">
             <h2>Sup!</h2>

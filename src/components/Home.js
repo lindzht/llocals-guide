@@ -1,7 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function Home ({allRecs}) {
+function Home ({allRecs, setSelectedCategory}) {
+
+    setSelectedCategory("All");
 
     let defaultObj = {
         name: "",
