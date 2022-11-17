@@ -25,17 +25,16 @@ function RecCards ({rec}) {
 
     return(
         <div className="card"> 
-        {/* Front of Card */}
 
             {isFrontCard ? 
                 <div id='front-card'> 
                     <h2 onClick={handleOnClick} >{rec.name}</h2>
-                    <img src={rec.img} alt={rec.name}></img>
+                    <img onClick={handleOnClick} src={rec.img} alt={rec.name}></img>
                     <h4>{rec.area}, {rec.borough}</h4>
                     <p id='emoji'>{rec.category}</p>
                     <button onClick={handleLikes}> {likes} ❤️</button> 
-                </div>
-                : <div id='back-card'> 
+                </div> : 
+                <div id='back-card'> 
                     <h3 onClick={handleOnClick} >{rec.name}</h3>
                     <h4>{rec.area}, {rec.borough}</h4>         
                     <p>{rec.description}</p>
