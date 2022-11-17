@@ -49,7 +49,18 @@ function App() {
   .filter((rec) => {
       if (selectedCategory === 'All' || selectedCategory === rec.category)
       return true
-    })
+  })
+  .sort ((a,b) => {
+    const catA =  a.name
+    const catB = b.name 
+    if (catA < catB) {
+      return -1;
+    }
+    if (catA > catB) {
+      return 1;
+    }
+      return 0;
+  })
 
   // const filteredRecsArray = allRecs.filter((rec) => {
   //   if (selectedCategory === 'All' || selectedCategory === rec.category)
