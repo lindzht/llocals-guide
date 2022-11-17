@@ -8,12 +8,13 @@ import RecList from './RecList';
 import NewRecForm from './NewRecForm';
 
 function App() {
-
+  
   const [allRecs, setAllRecs] = useState([])
   const [searchValue, setSearchValue] = useState("");
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   const history = useHistory();
+
 
   function addNewRec (someNewRecObj) {
     fetch (`http://localhost:3000/recommendations`, {
@@ -99,7 +100,7 @@ function App() {
           <NewRecForm addNewRec={addNewRec} /> 
         </Route>
         <Route exact path="/">
-          <Home allRecs={searchedArray} />   
+          <Home allRecs={allRecs} />   
         </Route>
       </Switch>
     </div>

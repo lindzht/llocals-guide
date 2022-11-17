@@ -1,30 +1,33 @@
-import React from "react";
-import RecCards from "./RecCards";
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-function Home ({allRecs}){
+function Home({allRecs}) {
+    let defaultObj = {
+        name: "",
+        img: "",
+        area: "",
+        borough: "",
+        description: ""
+    }
+	const length = allRecs.length;
+	const randomIndex = Math.floor(Math.random() * length);
+	let randomCard = allRecs[randomIndex] || defaultObj;
 
-    const randomIndex = Math.floor(Math.random() * allRecs.length);
-    const randomCard = allRecs[randomIndex];
-    // const randomRecCardArray = [allRecs[randomIndex]]
-    
-    // const randomCard = randomRecCardArray.map ((recObj) => {
-    //     return <RecCards rec={recObj} />
-    // })
+	return (
 
-    // console.log(randomCard.img);
-
-    return(
-        <div className="home-container">
-            {/* <h1 id="title">LLocal's Guide ✌️ NYC</h1> */}
-            {/* {randomCard} */}
-            <div className="random-container">
-                {/* <h3>{randomCard.name}</h3>
-                <img src={randomCard.img} alt={randomCard.name} /> */}
+        <div className='home-container'>
+            <img src={randomCard.img} alt={randomCard.name} />
+            <div className='random-description'>
+                <h2>{randomCard.name}</h2>
+                <h3>
+                    {randomCard.area}, {randomCard.borough}
+                </h3>
+                <p>{randomCard.description}</p>
+                <Link to={`/recommendations`}>More Suggestions ➡</Link>
             </div>
-
         </div>
-    )
+		
+	);
 }
 
-export default Home ;
-
+export default Home;

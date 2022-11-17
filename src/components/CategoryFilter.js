@@ -43,21 +43,3 @@ function CategoryFilter ({allRecCategories, allRecs, selectedCategory, setSelect
 export default CategoryFilter;
 
 
-
-//console.log(allRecs)
-
-   // console.log(allRecs);
-//    const handleClick = (e) => {
-//     console.log(e.target)
-//     // setSelectedCategory(recObj.category)
-// }
-    
-// const buttonCategories = allRecs.map (recObj => {
-//     const handleClick = () => {setSelectedCategory(recObj.category)}
-
-//     const select = selectedCategory === recObj.category ? 'selected' : null
-//     // className={select}
-//     return (
-//         <button onClick={handleClick} key={recObj.id}>{recObj.category}</button>
-//     )
-// })

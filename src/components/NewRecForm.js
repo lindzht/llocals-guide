@@ -50,17 +50,18 @@ function NewRecForm ({addNewRec}) {
 
     return(
         <div className="new-rec-form">
-           <form onSubmit={handleFormSubmit}>
-                <label> Biz Name:
+           <form className="form-container" onSubmit={handleFormSubmit}>
+                <label className="form-labels"> Biz Name: 
                     <input 
+                        className="form-inputs" 
                         type="text" 
                         name="name"
                         value={newRecObj.name}
                         onChange={handleChange} />
                 </label>
                 <br /> 
-                <label> Category: 
-                    <select name="category" onChange={handleChange}>
+                <label className="form-labels"> Category: 
+                    <select name="category" onChange={handleChange} className="form-inputs">
                         <option value="">Select</option>
                         <option value="🎶">🎶</option>
                         <option value="🎨">🎨</option>
@@ -68,63 +69,59 @@ function NewRecForm ({addNewRec}) {
                         <option value="🌭">🌭</option>
                         <option value="🍸">🍸</option>  
                     </select> 
-                    {/* <input type="radio" value="Music" onChange={handleChange} /> 🎶
-                    <input type="radio" value={newRecObj.category} onChange={handleChange} /> Art🎨
-                    <input type="radio" value={newRecObj.category} onChange={handleChange} /> Restaurant
-                    <input type="radio" value={newRecObj.category} onChange={handleChange} /> Bar */}
                 </label>
                 <br /> 
-                <label> Borough:
-                    <input type ="radio" name="borough" value="Brooklyn" onChange={handleChange} /> Brooklyn
-                    <input type ="radio" name="borough" value="Manhattan" onChange={handleChange} /> Manhattan
-                    {/* <select name="borough" onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="Brooklyn">Brooklyn</option>
-                        <option value="Manhattan">Manhattan</option>
-                    </select> */}
+                <label className="form-labels"> Borough:
+                    <input className="form-inputs" type ="radio" name="borough" value="Brooklyn" onChange={handleChange} /> Brooklyn
+                    <input className="form-inputs" type ="radio" name="borough" value="Manhattan" onChange={handleChange} /> Manhattan
                 </label>
                 < br />
-                <label> Hood:
+                <label className="form-labels"> Hood:
                     <input 
+                        className="form-inputs"
                         type="text" 
                         name="area"
                         value={newRecObj.area}
                         onChange={handleChange} />
                 </label>
                 <br />
-                <label> Website:
+                <label className="form-labels"> Website:
                     <input 
+                        className="form-inputs"
                         type="text" 
                         name="url"
                         value={newRecObj.url}
                         onChange={handleChange} />
                 </label>
                 <br />
-                <label> Image:
+                <label className="form-labels"> Image:
                     <input 
+                        className="form-inputs"
                         type="text" 
                         name="img"
                         value={newRecObj.img}
                         onChange={handleChange} />
                 </label>
                 <br />
-                <label> Say more fam!: 
+                <label className="form-labels"> Say more fam!: 
                     <input 
+                        className="form-inputs"
                         type="text" 
                         name="description"
                         value={newRecObj.description}
                         onChange={handleChange} />
                 </label>
                 <br />
-                <label> What's your name?: 
-                    <input 
+                <label className="form-labels"> What's your name?:  
+                    <input
+                        className="form-inputs" 
                         type="text" 
                         name="user"
                         value={newRecObj.user}
                         onChange={handleChange} />
                 </label>
                 <br />
-                    <input type="submit" value="Submit Rec" />
+                    <input id='submit-form'type="submit" value="Submit Rec" />
             </form>
         </div>
     )
