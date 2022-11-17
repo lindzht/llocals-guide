@@ -8,29 +8,35 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 nav a.active {
-  background-color: rgb(211, 8, 8);
+  background-color: #DA2727;
   color: white;
   align-items: center;
-  
 }
 
 nav {
   display: flex;
   align-items: center;
-  font-size: 1.9em;
+  font-size: 1.6em;
   margin-top: 0.5em;
+  font-weight: bold;
+  font-style: italic;
+  /* width: 50%; */
+}
+
+nav img {
+  margin-left: 24%;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-left: 20%;
+  margin-left: 10%;
+  margin-right: 4%;
 }
 
 nav a {
@@ -43,17 +49,13 @@ nav a:hover {
 }
 
 
-
-
-
-
-
 /* HOME  */
+
+
 .home-container {
   position: relative;
   /* width: 100%;
   height: 80%; */
-
 }
 
 .home-container img {
@@ -66,7 +68,6 @@ nav a:hover {
   object-fit: scale-down; */
 }
 
-
 .random-description {
   position: absolute;
   top: 7%;
@@ -75,7 +76,6 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.87);
   max-width: 300px;
   padding: 0% 2% 3% 2%;
-
 }
 
 .random-description h2 {
@@ -90,12 +90,16 @@ nav a:hover {
 }
 
 .random-description a:hover {
-  color: rgb(211, 8, 8);
+  color: #DA2727;
 }
 
 
-
 /* CARD DISPLAYS:  */
+
+
+.rec-list {
+  margin-bottom: 5%;
+}
 
 .card {
   background-image: linear-gradient(rgba(231, 231, 231, 0.657), rgba(255, 255, 255, 0.148));
@@ -107,7 +111,7 @@ nav a:hover {
 }
 
 .card:hover {
-  border-top: rgb(211, 8, 8) 3.8px solid;
+  border-top: #DA2727 3.8px solid;
 }
 
 .card img {
@@ -123,14 +127,14 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
-  grid-gap: 1rem;
-  max-width: 80%;
-  margin-left: 10%;
+  grid-gap: 2rem;
+  max-width: 90%;
+  margin-left: 5%;
 }
 
 .card button {
-  color: rgb(211, 8, 8);
-  border: 2px rgb(211, 8, 8) dotted;
+  color: #DA2727;
+  border: 2px #DA2727 dotted;
   background-color: white;
   font-size: 1.1em;
   padding: 5px;
@@ -142,21 +146,18 @@ nav a:hover {
 }
 
 #front-card h2:hover {
-  color: rgb(211, 8, 8);
+  color: #DA2727;
   font-weight: bold;
   cursor: grab;
 }
 
-#front-card {
-  line-height: 0.5em;
-}
-
 #emoji {
   font-size: 2.8em;
+  padding: 0px;
 }
 
 #back-card h3:hover {
-  color: rgb(211, 8, 8);
+  color: #DA2727;
   font-weight: bold;
   cursor: grab;
 }
@@ -164,11 +165,12 @@ nav a:hover {
 
 /* SEARCH PAGE */
 
+
 #search-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 7% 0 0 0;
+  margin: 5% 0 0 0;
 }
 
 #category-filter {
@@ -189,11 +191,13 @@ nav a:hover {
 #submit-input {
   width: 100px;
   height: 30px;
-  background-color: rgb(211, 8, 8);
+  background-color: #DA2727;
   color: white;
   margin: 0px 0px 0px 10px;
   border: 1px black solid;
   font-size: 1.25em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #search-input::placeholder {
@@ -202,21 +206,22 @@ nav a:hover {
 
 #search-input:focus {
   background-color: aliceblue;
-  color: rgb(211, 8, 8);
+  color: #DA2727;
 }
 
 
 /* CATEGORIES  */
 
+
 .category-container {
-  height: 200px;
+  height: 150px;
 }
 
 .category-container h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: rgb(211, 8, 8);
+  color: #DA2727;
 }
 
 .categories {
@@ -225,35 +230,49 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .categories button {
   border: none;
   background-color: rgb(233, 233, 233);
   border-radius: 50%;
   font-size: 2em;
   margin: 0.5em;
+}
 
+.categories a {
+  text-decoration: none;
+  color: black;
+}
+
+.categories a:visited {
+  color: black;
+}
+
+.categories a:hover {
+  color: black;
 }
 
 .categories button:hover {
-  border: 2px solid rgb(211, 8, 8);
+  border: 2px solid #DA2727;
 }
 
 .categories button:active {
-  background-color: rgb(211, 8, 8);
+  background-color: #DA2727;
 }
 
 .categories button:focus {
-  background-color: rgb(211, 8, 8);
+  background-color: #DA2727;
 }
 
 
 /* FORM  */
 
+
 .new-rec-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 3em;
+  margin-top: 6em;
   /* width: 100%; */
 }
 
@@ -265,35 +284,37 @@ nav a:hover {
 .form-labels {
   display: flex;
   flex-direction: row;
-  font-size: 1.5em;
+  font-size: 1.25em;
    /* width: 900px;  */
 }
-
 
 .form-inputs {
   font-size: .80em;
   width: 100%;
   height: 100%;
-  padding: 5px 5px 0px 5px;  
-  
+  padding: 5px 5px 0px 5px;
 }
 
 #submit-form {
-  width: 150px;
+  width: 130px;
   height: 40px;
-  background-color: rgb(211, 8, 8);
+  background-color: #DA2727;
   color: white;
   border: 1px black solid;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 label {
-  color: red;
+  color: black;
+  font-style: italic;
+  font-size: 1em;
 }
 
 
-
 /* ABOUT */
+
 
 .about-container {
   display: flex;
@@ -304,11 +325,10 @@ label {
 
 .about-container h2 {
   margin-top: 3em;
-  color:rgb(225, 5, 5);
+  color:#DA2727;
   font-size: 3em;
   font-weight: bold;
   font-style: italic;
-  
 }
 
 .image-box {
@@ -329,7 +349,7 @@ label {
   width: 13em;
 }
 
-.bio{
+.bio {
   border-radius: 50%;
   width: 100%;
   z-index: 1;
@@ -339,12 +359,12 @@ label {
   opacity: 0.2;
 }
 
-.image-container p{
+.image-container p {
   opacity: 1;
   position: relative;
   top: -130px;
   z-index: 0;
-  color: red;
+  color: #DA2727;
   font-size: 2.3em;
   font-weight: bold;
   font-style: italic;

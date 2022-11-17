@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function Home({allRecs}) {
+function Home ({allRecs}) {
+
     let defaultObj = {
         name: "",
         img: "",
@@ -9,12 +10,12 @@ function Home({allRecs}) {
         borough: "",
         description: ""
     }
+
 	const length = allRecs.length;
 	const randomIndex = Math.floor(Math.random() * length);
 	let randomCard = allRecs[randomIndex] || defaultObj;
 
 	return (
-
         <div className='home-container'>
             <img src={randomCard.img} alt={randomCard.name} />
             <div className='random-description'>
@@ -26,7 +27,6 @@ function Home({allRecs}) {
                 <Link to={`/recommendations`}>More Suggestions ➡</Link>
             </div>
         </div>
-		
 	);
 }
 

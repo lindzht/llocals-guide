@@ -2,7 +2,6 @@ import React from 'react';
 
 function Search ({searchValue, setSearchValue}) {
 
-
     return (
         <div id='search-page'>
             <div id='search-container'>
@@ -18,7 +17,8 @@ function Search ({searchValue, setSearchValue}) {
                     <input
                         id='submit-input'
                         type="submit" 
-                        value="Search" />
+                        value="Search" 
+                    />
             </div>
         </div>
     )

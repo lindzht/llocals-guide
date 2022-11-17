@@ -3,8 +3,9 @@ import React from "react";
 import leah from "../images/leah.png";
 import lindsay from "../images/lindsay.png";
 
-function About (){
-    return(
+function About () {
+    
+    return (
         <div className="about-container">
             <h2>Sup!</h2>
             <div class="image-box">
@@ -17,7 +18,7 @@ function About (){
                     <p>lindsay</p>
                 </div>
             </div>
-            <p>NYC's hottest new locals only guide 😈 </p> 
+            <p>NYC's hottest new locals only guide 😈</p> 
         </div>
     )
 }

@@ -7,14 +7,13 @@ import About from './About';
 import RecList from './RecList';
 import NewRecForm from './NewRecForm';
 
-function App() {
+function App () {
   
-  const [allRecs, setAllRecs] = useState([])
+  const [allRecs, setAllRecs] = useState([]);
   const [searchValue, setSearchValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState('All')
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   const history = useHistory();
-
 
   function addNewRec (someNewRecObj) {
     fetch (`http://localhost:3000/recommendations`, {
@@ -63,19 +62,6 @@ function App() {
       return 0;
   })
 
-  // const filteredRecsArray = allRecs.filter((rec) => {
-  //   if (selectedCategory === 'All' || selectedCategory === rec.category)
-  //   return true
-  // })
-
-
-  // function elevatorFunction (filterValue){
-  //   // const filteredArray = searchedArray.filter((rec) => {
-  //   //   console.log(filterValue)
-  //   // })
-  // }
-
-
   return (
     <div> 
       <NavBar />
@@ -89,15 +75,13 @@ function App() {
             setSearchValue={setSearchValue} 
             selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
-
-            // elevatorFunction={elevatorFunction}
           />
         </Route>
         <Route path="/about">
           <About />
         </Route>
         <Route path="/new">
-          <NewRecForm addNewRec={addNewRec} /> 
+          <NewRecForm addNewRec={addNewRec} setSelectedCategory={setSelectedCategory}/> 
         </Route>
         <Route exact path="/">
           <Home allRecs={allRecs} />   
