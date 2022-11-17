@@ -1,35 +1,24 @@
-import React, {useState} from 'react';
-import NewRecForm from './NewRecForm';
+import React from 'react';
 import RecCards from './RecCards';
 import Search from './Search';
 import CategoryFilter from './CategoryFilter';
 
-function RecList ({addNewRec, allRecs, searchValue, setSearchValue, elevatorFunction, selectedCategory,
+function RecList ({allRecs, searchValue, setSearchValue, selectedCategory,
     setSelectedCategory, allRecCategories}) {
-
-    
 
     const renderRecs = allRecs.map((rec) => {
         return <RecCards key={rec.id} rec={rec} /> 
     })
-
-    const [showForm, setShowForm] = useState(false)
-
-    function handleShowForm () {
-        setShowForm(!showForm)
-    }
-
-    return(
-        <div>
-            <Search searchValue={searchValue} setSearchValue={setSearchValue} elevatorFunction={elevatorFunction}/>
+   
+    return (
+        <div className="rec-list">
+            <Search searchValue={searchValue} setSearchValue={setSearchValue} />
             <br></br>
             <CategoryFilter allRecs={allRecs} selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory} allRecCategories={allRecCategories}/>
             <br></br>
-            {/* <button onClick={handleShowForm}>{showForm ? 'Hide Form' : 'Add New Rec'}</button> */}
-            {/* {showForm ? <NewRecForm addNewRec={addNewRec} />  : null}  */}
             <div className='card-list'>
-                {renderRecs}
+            {renderRecs}
             </div>
         </div>
     )

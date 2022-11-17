@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function NewRecForm ({addNewRec}) {
+function NewRecForm ({addNewRec, setSelectedCategory}) {
 
     const [newRecObj, setNewRecObj] = useState({
         name: "",
@@ -34,9 +34,10 @@ function NewRecForm ({addNewRec}) {
             description: "",
             user: ""
         });
+        setSelectedCategory("All");
     }
 
-    function handleChange (e){
+    function handleChange (e) {
         const key = e.target.name;
         const value = e.target.value;
         
@@ -46,9 +47,10 @@ function NewRecForm ({addNewRec}) {
         })
     }
 
-    console.log(newRecObj);
+    //console.log(newRecObj);
 
-    return(
+    return (
+
         <div className="new-rec-form">
            <form className="form-container" onSubmit={handleFormSubmit}>
                 <label className="form-labels"> Biz Name: 
@@ -126,4 +128,5 @@ function NewRecForm ({addNewRec}) {
         </div>
     )
 }
+
 export default NewRecForm;
