@@ -20,13 +20,6 @@ function Search ({searchValue, setSearchValue}) {
                         type="submit" 
                         value="Search" />
             </div>
-            {/* <div id='category-filter'>
-                <option onClick={ (e) => {console.log(e.target.value)}} value="🎶">🎶</option>
-                <option onClick={ handleFilter } value="🎨">🎨</option>
-                <option onClick={ handleFilter } value="☕️">☕️</option>
-                <option onClick={ handleFilter } value="🌭">🌭</option>
-                <option onClick={ handleFilter } value="🍸">🍸</option>  
-            </div> */}
         </div>
     )
 }

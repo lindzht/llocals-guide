@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import brooklyn from "../images/brooklynbr.jpeg";
+import nicholas from "../images/nicholas.jpeg";
 
 function RecCards ({rec}) {
    
@@ -29,7 +31,9 @@ function RecCards ({rec}) {
             {isFrontCard ? 
                 <div id='front-card'> 
                     <h2 onClick={handleOnClick} >{rec.name}</h2>
-                    <img onClick={handleOnClick} src={rec.img} alt={rec.name}></img>
+                    {rec.img ? 
+                        <img onClick={handleOnClick} src={rec.img} alt={rec.name}></img>
+                    : <img onClick={handleOnClick} src={nicholas} alt={rec.name}></img> || <img onClick={handleOnClick} src={brooklyn} alt={rec.name}></img> }
                     <h4>{rec.area}, {rec.borough}</h4>
                     <p id='emoji'>{rec.category}</p>
                     <button onClick={handleLikes}> {likes} ❤️</button> 
@@ -42,16 +46,6 @@ function RecCards ({rec}) {
                     <p>Submitted By: {rec.user}</p>
                 </div>
             }
-                
-
-
-        {/* Back of Card 
-            <h3>{rec.name}</h3>
-            <h4>{rec.area}, {rec.borough}</h4>         
-            <p>{rec.description}</p>
-            <a href={rec.url}>Website</a> | <a href={rec.events}>Events</a>
-            <p>Submitted By: {rec.user}</p>
-        */}
         </div>
     )
 }
