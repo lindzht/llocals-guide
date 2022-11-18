@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 function NewRecForm ({addNewRec, setSelectedCategory}) {
 
+    setSelectedCategory("All");
+
     const [newRecObj, setNewRecObj] = useState({
         name: "",
         borough: "",
@@ -74,8 +76,8 @@ function NewRecForm ({addNewRec, setSelectedCategory}) {
                 </label>
                 <br /> 
                 <label className="form-labels"> Borough:
-                    <input className="form-inputs" type ="radio" name="borough" value="Brooklyn" onChange={handleChange} /> Brooklyn
-                    <input className="form-inputs" type ="radio" name="borough" value="Manhattan" onChange={handleChange} /> Manhattan
+                    <input className="accent" type ="radio" name="borough" value="Brooklyn" onChange={handleChange} /> Brooklyn
+                    <input className="accent" type ="radio" name="borough" value="Manhattan" onChange={handleChange} /> Manhattan
                 </label>
                 < br />
                 <label className="form-labels"> Hood:
@@ -105,16 +107,17 @@ function NewRecForm ({addNewRec, setSelectedCategory}) {
                         onChange={handleChange} />
                 </label>
                 <br />
-                <label className="form-labels"> Say more fam!: 
-                    <input 
+                <label className="form-labels"> Say more fam! 
+                    <textarea 
                         className="form-inputs"
                         type="text" 
                         name="description"
                         value={newRecObj.description}
-                        onChange={handleChange} />
+                        onChange={handleChange} ></textarea>
+                    
                 </label>
                 <br />
-                <label className="form-labels"> What's your name?:  
+                <label className="form-labels"> What's your name?  
                     <input
                         className="form-inputs" 
                         type="text" 
@@ -123,7 +126,7 @@ function NewRecForm ({addNewRec, setSelectedCategory}) {
                         onChange={handleChange} />
                 </label>
                 <br />
-                    <input id='submit-form'type="submit" value="Submit Rec" />
+                    <input id='submit-form'type="submit" value="Submit" />
             </form>
         </div>
     )

@@ -5,7 +5,7 @@ function Search ({searchValue, setSearchValue}) {
     return (
         <div id='search-page'>
             <div id='search-container'>
-                <label>
+                {/* <label> */}
                     <input 
                         id='search-input'
                         type="text" 
@@ -13,7 +13,7 @@ function Search ({searchValue, setSearchValue}) {
                         placeholder='Whatchya looking for?'
                         value={searchValue}
                         onChange={ (e) => {setSearchValue(e.target.value)}} />
-                </label>
+                {/* </label> */}
                     <input
                         id='submit-input'
                         type="submit" 

@@ -182,18 +182,24 @@ nav a:hover {
   padding: 2%;
 }
 
+#search-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 #search-input {
-  width: 600px;
+  width: 300px;
   height: 25px;
   font-size: 1.25em;
+  margin: 0px 15px 0px 0px;
 }
 
 #submit-input {
   width: 100px;
-  height: 30px;
+  height: 40px;
   background-color: #DA2727;
   color: white;
-  margin: 0px 0px 0px 10px;
   border: 1px black solid;
   font-size: 1.25em;
   font-weight: bold;
@@ -202,12 +208,13 @@ nav a:hover {
 
 #search-input::placeholder {
   color: rgb(159, 159, 159);
+  font-size: .9em;
 }
 
-#search-input:focus {
+/* #search-input:focus {
   background-color: aliceblue;
   color: #DA2727;
-}
+} */
 
 
 /* CATEGORIES  */
@@ -269,30 +276,50 @@ nav a:hover {
 
 
 .new-rec-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 6em;
-  /* width: 100%; */
+  margin-top: 4em;
 }
 
-.form-container {
-  /* width: 1000px; */
-  width: 50%;
+label,
+input,
+select {
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
-.form-labels {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.25em;
-   /* width: 900px;  */
+select {
+  margin-left: 1.2rem;
 }
 
-.form-inputs {
-  font-size: .80em;
+form {
+  width: 30em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  margin-top: 0.2rem;
+  padding: 0.4rem;
   width: 100%;
-  height: 100%;
-  padding: 5px 5px 0px 5px;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: .5rem;
+  margin-left: 1.5rem;
+  accent-color: #DA2727;
 }
 
 #submit-form {
@@ -306,11 +333,36 @@ nav a:hover {
   font-style: italic;
 }
 
-label {
+
+
+
+/* .form-container {
+  /* width: 1000px; 
+  width: 50%;
+  
+} */
+
+/* .form-labels {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25em;
+   /* width: 900px; 
+} */
+
+/* .form-inputs {
+  font-size: .80em;
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px 0px 5px;
+} */
+
+
+
+/* label {
   color: black;
   font-style: italic;
   font-size: 1em;
-}
+} */
 
 
 /* ABOUT */
