@@ -20,11 +20,10 @@ nav a.active {
 nav {
   display: flex;
   align-items: center;
-  font-size: 1.6em;
+  font-size: 1.8em;
   margin-top: 0.5em;
   font-weight: bold;
   font-style: italic;
-  /* width: 50%; */
 }
 
 nav img {
@@ -34,8 +33,8 @@ nav img {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  margin-left: 10%;
+  width: 60%;
+  margin-left: 20%;
   margin-right: 4%;
 }
 
@@ -75,7 +74,7 @@ nav a:hover {
   text-align: right;
   background-color: rgba(255, 255, 255, 0.87);
   max-width: 300px;
-  padding: 0% 2% 3% 2%;
+  padding: 0 2% 1.5% 2%;
 }
 
 .random-description h2 {
@@ -99,15 +98,15 @@ nav a:hover {
 
 .rec-list {
   margin-bottom: 5%;
+  padding-top: 100px;
 }
 
 .card {
-  background-image: linear-gradient(rgba(231, 231, 231, 0.657), rgba(255, 255, 255, 0.148));
-  /* max-width: 10em; */
+  background-image: linear-gradient(rgba(215, 215, 215, 0.657), rgba(255, 255, 255, 0));
   text-align: center;
-  border: 2px solid #e7e7e7;
+  /* border: 2px solid #e7e7e7; */
   border-radius: 4px;
-  padding: .5rem; 
+  /* padding: .8rem;  */
 }
 
 .card:hover {
@@ -115,51 +114,90 @@ nav a:hover {
 }
 
 .card img {
-  max-width: 100%;
-  /* border-radius: 50%; */
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+  
 }
 
 .card-list {
-  /* display: flex; */
-  /* flex-direction: row wrap;
-  justify-content: space-around;
-  align-items: center; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   max-width: 90%;
-  margin-left: 5%;
+  margin: 5% 0 0 5%;
 }
 
 .card button {
-  color: #DA2727;
-  border: 2px #DA2727 dotted;
-  background-color: white;
+  color: #000000;
+  border: none;
+  border: 2px #d7d7d7 solid;
+  background-color: rgb(246, 246, 246);
   font-size: 1.1em;
+  font-weight: bold;
   padding: 5px;
+  border-radius: 50%;
+  height: 61px;
+  width: 61px;
 }
 
-#front-card h2 {
+.card button:hover {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  border: 3px #DA2727 solid;
+}
+
+.card button:active {
+  color: rgb(255, 255, 255);
+  background-color: #DA2727;
+}
+
+#front-card h3 {
   line-height: 1em;
-  font-size: 1.8em;
+  background-color: #e1e1e1;
+  padding: 0.7em;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 400;
 }
 
-#front-card h2:hover {
+#front-card h3:hover {
   color: #DA2727;
   font-weight: bold;
   cursor: grab;
+}
+
+#front-card h4 {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+#front-card #icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: -50px 0 -20px 30%;
+  width: 150px;
 }
 
 #emoji {
   font-size: 2.8em;
-  padding: 0px;
+}
+
+#back-card h3 {
+  line-height: 1em;
+  font-size: 1.7em;
+  font-weight: 500;
 }
 
 #back-card h3:hover {
   color: #DA2727;
-  font-weight: bold;
   cursor: grab;
+}
+
+#back-card p {
+  padding: 1em;
 }
 
 
@@ -170,7 +208,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5% 0 0 0;
+  margin: 1% 0 0 0;
 }
 
 #category-filter {
@@ -183,12 +221,13 @@ nav a:hover {
 }
 
 #search-input {
-  width: 600px;
+  width: 400px;
+  margin-left: 1%;
   height: 25px;
   font-size: 1.25em;
 }
 
-#submit-input {
+/* #submit-input {
   width: 100px;
   height: 30px;
   background-color: #DA2727;
@@ -198,16 +237,13 @@ nav a:hover {
   font-size: 1.25em;
   font-weight: bold;
   font-style: italic;
-}
+} */
 
 #search-input::placeholder {
   color: rgb(159, 159, 159);
+  /* text-align: center; */
 }
 
-#search-input:focus {
-  background-color: aliceblue;
-  color: #DA2727;
-}
 
 
 /* CATEGORIES  */
@@ -237,6 +273,8 @@ nav a:hover {
   border-radius: 50%;
   font-size: 2em;
   margin: 0.5em;
+  width: 60px;
+  height: 60px;
 }
 
 .categories a {
@@ -253,7 +291,7 @@ nav a:hover {
 }
 
 .categories button:hover {
-  border: 2px solid #DA2727;
+  border: 3px solid #DA2727;
 }
 
 .categories button:active {
@@ -264,35 +302,63 @@ nav a:hover {
   background-color: #DA2727;
 }
 
+.categories #all {
+  height: 60px;
+}
+
 
 /* FORM  */
 
 
 .new-rec-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 6em;
-  /* width: 100%; */
+  margin-top: 4em;
 }
 
-.form-container {
-  /* width: 1000px; */
-  width: 50%;
+label,
+input,
+select {
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
-.form-labels {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.25em;
-   /* width: 900px;  */
+select {
+  margin-left: 1.2rem;
 }
 
-.form-inputs {
-  font-size: .80em;
+form {
+  width: 30em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  margin-top: 0.2rem;
+  padding: 0.4rem;
   width: 100%;
-  height: 100%;
-  padding: 5px 5px 0px 5px;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: .5rem;
+  /* margin-left: 1.5rem; */
+  accent-color: #DA2727;
+}
+
+.accent {
+  margin-left: 50px;
 }
 
 #submit-form {
@@ -304,12 +370,6 @@ nav a:hover {
   font-size: 1.25em;
   font-weight: bold;
   font-style: italic;
-}
-
-label {
-  color: black;
-  font-style: italic;
-  font-size: 1em;
 }
 
 
@@ -324,7 +384,7 @@ label {
 }
 
 .about-container h2 {
-  margin-top: 3em;
+  margin-top: 2em;
   color:#DA2727;
   font-size: 3em;
   font-weight: bold;
@@ -338,7 +398,7 @@ label {
   align-items: center;
   width: 40%;
   height: 200px;
-  margin: 5% 0 2% 0;
+  margin: 3% 0 2% 0;
 }
 
 .image-container {
@@ -347,6 +407,7 @@ label {
   align-items: center;
   flex-direction: column;
   width: 13em;
+  margin-top: 10%;
 }
 
 .bio {
@@ -362,14 +423,13 @@ label {
 .image-container p {
   opacity: 1;
   position: relative;
-  top: -130px;
+  top: -150px;
   z-index: 0;
   color: #DA2727;
-  font-size: 2.3em;
   font-weight: bold;
   font-style: italic;
 }
 
 .about-container p {
-  font-size: 1.3em;
+  font-size: 2em;
 }

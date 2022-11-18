@@ -43,7 +43,8 @@ function App () {
     rec.description.toLowerCase().includes(searchValue.toLowerCase()) || 
     rec.borough.toLowerCase().includes(searchValue.toLowerCase()) || 
     rec.category.toLowerCase().includes(searchValue.toLowerCase()) || 
-    rec.area.toLowerCase().includes(searchValue.toLowerCase())
+    rec.area.toLowerCase().includes(searchValue.toLowerCase()) || 
+    rec.user.toLowerCase().includes(searchValue.toLowerCase())
     )
   })
   .filter((rec) => {
