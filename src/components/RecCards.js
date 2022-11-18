@@ -35,15 +35,17 @@ function RecCards ({rec}) {
                     : <img onClick={handleOnClick} src={nicholas} alt={rec.name}></img> 
                     || <img onClick={handleOnClick} src={brooklyn} alt={rec.name}></img> }
                     <h4>{rec.area}, {rec.borough}</h4>
-                    <p id='emoji'>{rec.category}</p> 
-                    <button onClick={handleLikes}> {likes} ❤️</button> 
+                    <div id='icons'>
+                        <p id='emoji'>{rec.category}</p> 
+                        <button onClick={handleLikes}> {likes} ❤️</button> 
+                    </div>
                 </div> 
                 : <div id='back-card'> 
                     <h3 onClick={handleOnClick} >{rec.name}</h3>
                     <h4>{rec.area}, {rec.borough}</h4>         
                     <p>{rec.description}</p>
-                    <a href={rec.url}>Website</a>
-                    <p>Submitted By: {rec.user}</p>
+                    <a href={rec.url}>Click here for more info!</a>
+                    <p style={{fontStyle: "italic"}}>Submitted By: {rec.user}</p>
                 </div>
             }
         </div>

@@ -10,15 +10,15 @@ function Search ({searchValue, setSearchValue}) {
                         id='search-input'
                         type="text" 
                         name="name"
-                        placeholder='Whatchya looking for?'
+                        placeholder='Whatchya looking for? Search here...'
                         value={searchValue}
                         onChange={ (e) => {setSearchValue(e.target.value)}} />
                 </label>
-                    <input
+                    {/* <input
                         id='submit-input'
                         type="submit" 
                         value="Search" 
-                    />
+                    /> */}
             </div>
         </div>
     )

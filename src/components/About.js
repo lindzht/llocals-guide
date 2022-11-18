@@ -2,6 +2,7 @@ import React from "react";
 
 import leah from "../images/leah.png";
 import lindsay from "../images/lindsay.png";
+import about from "../images/text.png";
 
 function About ({setSelectedCategory}) {
 
@@ -20,7 +21,8 @@ function About ({setSelectedCategory}) {
                     <p>lindsay</p>
                 </div>
             </div>
-            <p>NYC's hottest new locals only guide 😈</p> 
+            <img style={{width: 700}}src={about} alt="text" />
+            {/* <p>NYC's hottest new locals only guide 😈</p>  */}
         </div>
     )
 }

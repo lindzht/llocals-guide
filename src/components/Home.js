@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import nicholas from "../images/nicholas.jpeg";
 
 function Home ({allRecs, setSelectedCategory}) {
 
@@ -19,12 +20,10 @@ function Home ({allRecs, setSelectedCategory}) {
 
 	return (
         <div className='home-container'>
-            <img src={randomCard.img} alt={randomCard.name} />
+            {randomCard.img ? <img src={randomCard.img} alt={randomCard.name} /> : <img src={nicholas} alt={randomCard.name} /> }
             <div className='random-description'>
                 <h2>{randomCard.name}</h2>
-                <h3>
-                    {randomCard.area}, {randomCard.borough}
-                </h3>
+                <h3 style={{ fontStyle: "italic" }}>{randomCard.area}, {randomCard.borough}</h3>
                 <p>{randomCard.description}</p>
                 <Link to={`/recommendations`}>More Suggestions ➡</Link>
             </div>
