@@ -68,7 +68,7 @@
       "url": "https://www.msg.com/madison-square-garden",
       "img": "https://smedia.pnet-static.com/img/MSG1731.jpg_large",
       "description": "MSG is the 'World's Most Famous Arena' and for good reason. Besides being the home of the NY Knicks & Rangers, it is the premier venue to see world-class musicians perform. In fact, Phish has played here 81 times since 1994!",
-      "likes": 11,
+      "likes": 18,
       "user": "Leah",
       "id": 6
     },
@@ -140,13 +140,13 @@
       "url": "https://www.kingstheatre.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
       "img": "https://www.kingstheatre.com/media/ysgnnj14/kings-venue-2-1920x1280.jpg",
       "description": "Gorgeous theatre right next to Prospect Park. It has been around since 1929 and every concert I've seen here has been spectacular.",
-      "likes": 4,
+      "likes": 5,
       "user": "Leah",
       "id": 12
     },
     {
       "name": "Fotografiska",
-      "borough": "Brooklyn",
+      "borough": "Manhattan",
       "area": "Gramercy Park",
       "category": "🎨",
       "url": "https://www.fotografiska.com/nyc/",
@@ -154,7 +154,7 @@
       "description": "A must-see if you're a photography lover!",
       "user": "Leah",
       "id": 13,
-      "likes": 1
+      "likes": 2
     },
     {
       "name": "McSorley’s Old Ale House",
@@ -164,7 +164,7 @@
       "url": "https://mcsorleysoldalehouse.nyc/",
       "img": "https://imgs.6sqft.com/wp-content/uploads/2017/03/10104443/02McSorleysInterior5Center72900.jpg",
       "description": "Old school Irish pub established in 1854! It only serves two drinks: light beer and dark beer.",
-      "likes": 4,
+      "likes": 5,
       "user": "Leah",
       "id": 14
     },
@@ -248,7 +248,7 @@
       "url": "https://www.seycoffee.com/",
       "img": "https://cdn.shopify.com/s/files/1/0002/6352/0281/files/cafe2_5760x.jpg?v=1613535026",
       "description": "Unbelievable coffee—strongly suggest buying any of their washed beans! ",
-      "likes": 0,
+      "likes": 7,
       "user": "Lindsay",
       "id": 21
     },
@@ -261,7 +261,8 @@
       "img": "https://lh3.googleusercontent.com/p/AF1QipNy9i_F6X-T8I7ruH-Xt2SXNHChG3rsIijvCjUa=s1360-w1360-h1020",
       "description": "Kenka is FUN. Go here with a big group of friends, order a zillion dishes to share, get the beer tower, and don't forget the cotton candy machine on the way out. ",
       "user": "Lindsay",
-      "id": 22
+      "id": 22,
+      "likes": 1
     },
     {
       "name": "Olea",
@@ -271,19 +272,19 @@
       "url": "https://www.oleabrooklyn.com/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipOaKVfMTRKPOVptOMxh5C-eRO8dHWj69NsyydlM=s1360-w1360-h1020",
       "description": "BRUUUNNCCHH here is so good, but be prepared to wait in line. Highlights include the lamb hash, Olea breakfast, and their Bloody Mary's",
-      "likes": 0,
+      "likes": 2,
       "user": "Lindsay",
       "id": 23
     },
     {
-      "name": "Awash ",
+      "name": "Awash",
       "borough": "Brooklyn",
       "area": "Cobble Hill",
       "category": "🌭",
       "url": "https://awashny.com/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipNu6CE7Yk_xXfHKWPJ0CgKA9bodHvV__uZxCj7C=s1360-w1360-h1020",
       "description": "Such delicious Ethiopian food! Veggie combo is a must. ",
-      "likes": 0,
+      "likes": 2,
       "user": "Lindsay",
       "id": 24
     },
@@ -295,7 +296,7 @@
       "url": "https://www.greenwoodparkbk.com/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipPsyZxczWQoigN9S5ZFei48c-jYrYGoCDWwq03e=s1360-w1360-h1020",
       "description": "Massive beer garden (with cocktails!) housed in an old gas station. Tons of outdoor space & casual/fun for the warmer days. ",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 25
     },
@@ -307,7 +308,7 @@
       "url": "https://www.clarobk.com/menus/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipNNNNXv0kKEyB1CHdMZ6Fe3lyQ-i7Wy6o-NAb33=s1360-w1360-h1020",
       "description": "One of THE BEST Mexican restaurants in the city specializing in Oaxacan cuisine. ",
-      "likes": 0,
+      "likes": 4,
       "user": "Lindsay",
       "id": 26
     },
@@ -319,7 +320,7 @@
       "url": "https://www.daytimebk.com/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipOe-NhFD9SR_GfsipZd3PL3HA1vFT7MUSKcyD9j=s1360-w1360-h1020",
       "description": "Delicious coffee, baked goods, and sammies! ",
-      "likes": 0,
+      "likes": 2,
       "user": "Lindsay",
       "id": 27
     },
@@ -331,7 +332,7 @@
       "url": "https://www.yelp.com/biz/tacos-el-bronco-brooklyn-7",
       "img": "https://s3-media0.fl.yelpcdn.com/bphoto/bNiwYSRYuB0jYplirFe6Iw/o.jpg",
       "description": "Best tacos in the city. While they have a brick & mortar location—their truck is far superior (on 37th St & 5th Ave) ",
-      "likes": 1,
+      "likes": 9,
       "user": "Lindsay",
       "id": 28
     },
@@ -343,7 +344,7 @@
       "url": "http://seawitchnyc.com/",
       "img": "https://onthegrid.city/imager/s3_amazonaws_com/onthegrid.city/assets/grid/brooklyn/south-slope/sea-witch/SeaWitch_2_299006722e285f47655d17d1c9136337.jpg",
       "description": "Come here if you're in the mood to get real drunk, eat some fries, and hang with the fish. Outside space a huge plus! ",
-      "likes": 0,
+      "likes": 2,
       "user": "Lindsay",
       "id": 29
     },
@@ -355,7 +356,7 @@
       "url": "http://www.fortdefiancebrooklyn.com/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipMbrN1ksATqemT7JBs1DBfDh1zZINhnx9zcWQVJ=s1360-w1360-h1020",
       "description": "YUM. Classic American food spot in Red Hook. Come here for the brunch and accidentally get drunk.",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 30
     },
@@ -367,7 +368,7 @@
       "url": "https://www.diandi.nyc/",
       "img": "https://cdn.vox-cdn.com/thumbor/wkTYRkfrVJLJ-eO3dnBXnJ9ygM0=/0x0:5760x3840/1200x0/filters:focal(0x0:5760x3840):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/13689444/Di_An_Di_16.jpg",
       "description": "If you're not ordering the Pho here, you're making a mistake. Such good Vietnamese food, it'll be your new go-to spot. Don't forget to try their signature cocktails. ",
-      "likes": 0,
+      "likes": 6,
       "user": "Lindsay",
       "id": 31
     },
@@ -379,7 +380,7 @@
       "url": "https://www.glasserienyc.com/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipOQuKhCQ4iDx1r_3lUsgF3SykToAeXrrjep0YgZ=s1360-w1360-h1020",
       "description": "This is the place to take a date you want to impress AND eat well. ",
-      "likes": 0,
+      "likes": 4,
       "user": "Lindsay",
       "id": 32
     },
@@ -391,7 +392,7 @@
       "url": "https://www.wilcoxsonbrooklynceramics.com/",
       "img": "https://images.squarespace-cdn.com/content/v1/5473ef50e4b08f564d5ba231/34159496-ca8a-4b08-b361-8a1ecade4a79/Raw+1.jpg?format=2500w",
       "description": "Aside from selling beautiful ceramics, Wilcoxson also has regular workshops where you can learn to make your own ceramic mugs, plates, and planters!",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 33
     },
@@ -403,7 +404,7 @@
       "url": "https://www.goodsforthestudy.com/",
       "img": "https://greenwichvillage.nyc/wp-content/uploads/2021/06/mcnally.jpg",
       "description": "If you love stationary, pens, and soft leather journals...this is your heaven.",
-      "likes": 0,
+      "likes": 2,
       "user": "Lindsay",
       "id": 34
     },
@@ -415,7 +416,7 @@
       "url": "http://www.highdive-brooklyn.com/",
       "img": "https://images.squarespace-cdn.com/content/v1/561eb267e4b047126248ef02/1445371347603-TOQJNP0W37HVG4RXBCZ9/IMG_5071.JPG?format=2500w",
       "description": "Fun, sticky, neighborhood bar with tons of board games and endless amounts of popcorn. ",
-      "likes": 0,
+      "likes": 4,
       "user": "Lindsay",
       "id": 35
     },
@@ -427,7 +428,7 @@
       "url": "https://eviltwin.nyc/",
       "img": "https://craftpeak-cooler-images.imgix.net/evil-twin-brewing-nyc/DSC00713.jpg?auto=compress%2Cformat&fit=scale&h=1024&ixlib=php-3.3.0&w=1024&wpsize=large&s=6717981117ffd5f3f7f1ea0aec5fe552",
       "description": "Evil Twin Brewery has two spots—Ridgewood being a personal fav. While the beer is good, their seasonal hard seltzer is where it's at. ",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 36
     },
@@ -439,7 +440,7 @@
       "url": "https://www.freddysbar.com/",
       "img": "https://media.timeout.com/images/103691712/image.jpg",
       "description": "Freddy's is a bar in the front and a venue in the back. Definitely a spot to get drunk, have a bite, and stumble into a show. ",
-      "likes": 0,
+      "likes": 2,
       "user": "Lindsay",
       "id": 37
     },
@@ -451,7 +452,7 @@
       "url": "https://www.pigbeachnyc.com/",
       "img": "https://lh3.googleusercontent.com/p/AF1QipOp_8EM0lkciaHkKWF53VlnmjryVRlHu90_7umN=s1360-w1360-h1020",
       "description": "Some of the best BBQ in Brooklyn. Massive outdoor space, this is a great spot to party in the summer time and gnaw on some meat. ",
-      "likes": 0,
+      "likes": 3,
       "user": "Lindsay",
       "id": 38
     },
@@ -463,7 +464,7 @@
       "url": "https://fragment.gallery/",
       "img": "https://fragment.gallery/ve-files/cache/0001525_799x1027_0_0.jpeg",
       "description": "Exciting contemporary gallery specializing in emerging artists ",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 39
     },
@@ -473,9 +474,9 @@
       "area": "Boerum Hill",
       "category": "🎨",
       "url": "https://www.theinvisibledog.org/",
-      "img": "https://lh3.googleusercontent.com/p/AF1QipMYoyTvQVYfyGbP_R6dZNsC3MYGo4yGu3sdu58b=s1360-w1360-h1020",
+      "img": "https://images.squarespace-cdn.com/content/581e4d6ee58c62bd097e5709/ba6d2740-a2d4-4e03-8ef4-90e74d4e1f7d/+my.jpg?format=1500w&content-type=image%2Fjpeg",
       "description": "The Invisible Dog offers TONS—immersive art shows, venue space, performances, and shopping pop-ups.",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 40
     },
@@ -487,21 +488,33 @@
       "url": "https://media1.giphy.com/media/CiTLZWskt7Fu/giphy.gif?cid=790b7611db92a4bfa56336a042a3e229c7f8f589322390d2&rid=giphy.gif&ct=g",
       "img": "",
       "description": "Perfect. 10/10",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 41
     },
     {
-      "name": "Warsaw ",
+      "name": "Warsaw",
       "borough": "Brooklyn",
       "area": "Greenpoint",
       "category": "🎶",
       "url": "https://www.ticketmaster.com/warsaw-tickets-brooklyn/venue/24",
-      "img": "https://lh3.googleusercontent.com/p/AF1QipPuQmopkOPEColCalvgBHUHz6b_cAqL92NLhYym=s1360-w1360-h1020",
+      "img": "https://i0.wp.com/greenpointers.com/app/uploads/2022/04/Warsaw-e1649874115821.jpeg?fit=1080%2C607&ssl=1",
       "description": "Super sick music venue, where you can catch a punk show & eat some delicious pierogies ",
-      "likes": 0,
+      "likes": 1,
       "user": "Lindsay",
       "id": 42
+    },
+    {
+      "name": "Frankel's Delicatessen",
+      "borough": "Brooklyn",
+      "area": "Greenpoint",
+      "category": "🌭",
+      "url": "https://www.frankelsdelicatessen.com/",
+      "img": "https://media.timeout.com/images/103391204/image.jpg",
+      "description": "yummy! my favorite bagels",
+      "likes": 1,
+      "user": "Leah",
+      "id": 43
     }
   ]
 }
