@@ -16,7 +16,7 @@ function App () {
   const history = useHistory();
 
   function addNewRec (someNewRecObj) {
-    fetch (`http://localhost:3000/recommendations`, {
+    fetch (`https://llocals-only-recommendations.onrender.com/recommendations`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ function App () {
   }
 
   useEffect (() => {
-    fetch (`http://localhost:3000/recommendations`)
+    fetch (`https://llocals-only-recommendations.onrender.com/recommendations`)
      .then (response => response.json ())
      .then (recData => setAllRecs(recData))
   }, [])
